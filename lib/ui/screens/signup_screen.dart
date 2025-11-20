@@ -51,7 +51,6 @@ class _SignupScreenState extends State<SignupScreen> {
               constraints: BoxConstraints(maxWidth: maxWidth),
               child: Column(
                 children: [
-                  // Heading over the wave
                   Container(
                     alignment: Alignment.centerLeft,
                     padding: const EdgeInsets.only(left: 12, top: 24),
@@ -63,7 +62,6 @@ class _SignupScreenState extends State<SignupScreen> {
                   ),
                   const SizedBox(height: 22),
 
-                  // Card with form
                   Card(
                     elevation: 10,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
@@ -93,8 +91,6 @@ class _SignupScreenState extends State<SignupScreen> {
                                 ),
                               ),
                               const SizedBox(height: 12),
-
-                              // Email
                               TextFormField(
                                 controller: _email,
                                 keyboardType: TextInputType.emailAddress,
@@ -106,8 +102,6 @@ class _SignupScreenState extends State<SignupScreen> {
                                 ),
                               ),
                               const SizedBox(height: 12),
-
-                              // Password
                               TextFormField(
                                 controller: _password,
                                 obscureText: true,
@@ -119,8 +113,6 @@ class _SignupScreenState extends State<SignupScreen> {
                                 ),
                               ),
                               const SizedBox(height: 12),
-
-                              // Confirm password
                               TextFormField(
                                 controller: _confirm,
                                 obscureText: true,
@@ -136,8 +128,6 @@ class _SignupScreenState extends State<SignupScreen> {
                                 ),
                               ),
                               const SizedBox(height: 12),
-
-                              // Terms checkbox
                               Row(
                                 children: [
                                   Checkbox(value: _agreeTerms, onChanged: (val) => setState(() => _agreeTerms = val ?? false)),
@@ -153,8 +143,6 @@ class _SignupScreenState extends State<SignupScreen> {
                                 ],
                               ),
                               const SizedBox(height: 8),
-
-                              // Signup button
                               SizedBox(
                                 width: double.infinity,
                                 child: BlocBuilder<AuthBloc, AuthState>(

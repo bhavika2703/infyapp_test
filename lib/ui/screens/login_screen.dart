@@ -44,7 +44,6 @@ class _LoginScreenState extends State<LoginScreen> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  // small intro block aligned left over wave
                   Container(
                     alignment: Alignment.centerLeft,
                     padding: const EdgeInsets.only(left: 12, top: 24),
@@ -59,8 +58,6 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
 
                   const SizedBox(height: 28),
-
-                  // Card with form
                   Card(
                     elevation: 10,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
@@ -70,7 +67,6 @@ class _LoginScreenState extends State<LoginScreen> {
                         key: _formKey,
                         child: Column(
                           children: [
-                            // Email
                             TextFormField(
                               controller: _email,
                               keyboardType: TextInputType.emailAddress,
@@ -82,8 +78,6 @@ class _LoginScreenState extends State<LoginScreen> {
                               ),
                             ),
                             const SizedBox(height: 12),
-
-                            // Password
                             TextFormField(
                               controller: _password,
                               obscureText: true,
@@ -95,8 +89,6 @@ class _LoginScreenState extends State<LoginScreen> {
                               ),
                             ),
                             const SizedBox(height: 16),
-
-                            // Login button
                             SizedBox(
                               width: double.infinity,
                               child: BlocBuilder<AuthBloc, AuthState>(
@@ -115,7 +107,6 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
 
                             const SizedBox(height: 12),
-                            // Signup link
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [

@@ -14,8 +14,6 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     on<SignUpRequested>(_onSignUpRequested);
     on<SignOutRequested>(_onSignOutRequested);
 
-    // Keep the bloc in sync with FirebaseAuth changes. When Firebase changes
-    // we trigger an internal check or sign-out so UI can react.
     _sub = authRepository.authStateChanges().listen((user) {
       if (user != null) add(AuthCheckRequested());
       else add(SignOutRequested());
@@ -43,8 +41,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     }
   }
 
-  /// UPDATED: emit AuthSignUpSuccess after successful sign-up so UI can
-  /// navigate back to Login (or show a message) instead of auto-signing-in.
+
   Future<void> _onSignUpRequested(SignUpRequested e, Emitter<AuthState> emit) async {
     emit(AuthLoading());
     try {
