@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "664867399245",
+    "project_id": "animation-b4d9a",
+    "storage_bucket": "animation-b4d9a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664867399245:android:0c90afd6f5da5c390b5e04",
+        "android_client_info": {
+          "package_name": "com.example.infyapp_test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5fSqpYAj1kvlEaA4Ug_QiP2adJWCzkxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664867399245:android:dc457147435153700b5e04",
+        "android_client_info": {
+          "package_name": "com.example.prectice0702"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5fSqpYAj1kvlEaA4Ug_QiP2adJWCzkxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
